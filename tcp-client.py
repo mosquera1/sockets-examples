@@ -1,6 +1,7 @@
 import os
 import argparse
 import socket
+from constants import CHUNK_SIZE
 
 def parse_arguments():
   parser = argparse.ArgumentParser()
@@ -10,8 +11,6 @@ def parse_arguments():
   parser.add_argument("-P", "--port", type=int, default="8080")
 
   return parser.parse_args()
-
-CHUNK_SIZE = 1024
 
 def main():
   args = parse_arguments()

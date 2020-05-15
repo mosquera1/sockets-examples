@@ -1,6 +1,7 @@
 import argparse
 import socket
 import time
+from constants import CHUNK_SIZE
 
 def get_timestamp():
   return int(round(time.time()*1000))
@@ -12,8 +13,6 @@ def parse_arguments():
   parser.add_argument("-P", "--port", type=int, default="8080")
 
   return parser.parse_args()
-
-CHUNK_SIZE = 1024
 
 def main():
   args = parse_arguments()
