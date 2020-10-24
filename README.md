@@ -69,3 +69,4 @@ En nuestro caso, vamos a simular una tasa de perdida de paquetes del 10% para po
 Una vez que terminamos con la simulación, debemos correr el siguiente comando para desactivar las reglas setteadas:
 
     comcast --stop
+"# tp1-intro-distribuidos" 
